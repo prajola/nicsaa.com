@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Logo } from "./components/Logo";
 import {
   ArrowRight,
   Sparkles,
@@ -73,13 +74,11 @@ function Nav() {
       }`}
     >
       <div className="container flex items-center justify-between py-4 px-6">
-        <a href="#" className="flex items-center gap-2.5 group">
-          <div className="relative w-8 h-8 rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-violet-500 to-fuchsia-500" />
-            <div className="absolute inset-[2px] rounded-md bg-black flex items-center justify-center font-display font-bold text-white text-sm">
-              N
-            </div>
-          </div>
+        <a
+          href="#"
+          className="flex items-center gap-2.5 group transition-[filter] duration-300 hover:[filter:drop-shadow(0_0_18px_rgba(168,85,247,0.55))]"
+        >
+          <Logo size={34} />
           <span className="font-display font-semibold text-lg tracking-tight">
             Nicsaa
           </span>
@@ -783,12 +782,7 @@ function Footer() {
         <div className="grid md:grid-cols-[1.4fr_repeat(3,1fr)_0.8fr] gap-10 mb-12">
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="relative w-8 h-8 rounded-lg overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-violet-500 to-fuchsia-500" />
-                <div className="absolute inset-[2px] rounded-md bg-black flex items-center justify-center font-display font-bold text-white text-sm">
-                  N
-                </div>
-              </div>
+              <Logo size={32} />
               <span className="font-display font-semibold text-lg">Nicsaa</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
